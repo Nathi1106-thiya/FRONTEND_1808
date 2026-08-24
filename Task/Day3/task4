@@ -1,0 +1,9 @@
+
+Block-level elements: 
+<header>, <nav>, <main>, <section>, <article>, <footer>
+Inline elements:
+ <strong>, <span>
+Semantic elements:
+ <header>, <nav>, <main>, <section>, <article>, <strong>, <footer>
+Non-semantic elements:
+ <span> and <button>
