@@ -1,0 +1,27 @@
+.title{
+    color: blue;
+    background-color: lightgray;
+}
+
+.section-title{
+    color: white;
+    background-color: green;
+}
+
+.teacher{
+    color: darkblue;
+}
+
+.student{
+    color: purple;
+    background-color: lavender;
+}
+
+.topic{
+    color: darkgreen;
+    background-color: aqua;
+}
+.status{
+    color: white;
+    background-color: orange;
+}
