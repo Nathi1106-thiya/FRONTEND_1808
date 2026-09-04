@@ -1,0 +1,24 @@
+/* universal selector */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Element Selector */
+h1{
+    text-align: center;
+}
+
+/* Class Selector */
+.skills{
+    color: rgba(89, 86, 90, 0.74);
+}
+
+/* ID selector */
+#student-name{
+    color: rgb(185, 9, 9);
+}
+
+/* Grouping Selector */
+h2,p,h1{
+    padding: 5px;
+}
