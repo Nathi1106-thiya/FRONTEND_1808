@@ -1,0 +1,18 @@
+.profile-card{
+    width: 350px;
+    height: 300px;
+
+    padding: 25px;
+
+    border: 3px solid black;
+
+    margin: 50px auto;
+
+    background-color: lightblue;
+    box-sizing: border-box;
+}
+h2{
+     text-align: center;
+
+
+}

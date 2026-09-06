@@ -1,0 +1,13 @@
+.box{
+    background-color: antiquewhite;
+    width: auto;
+    height: 70px;
+    padding: 20px;
+    border: 2px solid rgb(202, 192, 211);
+    margin: 40px;
+}
+
+p{
+    color: rgb(14, 15, 15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
