@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.parent{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(169, 174, 177);
+    position: relative;
+    align-items: center;
+    left: 50px;
+    top: 40px;
+    border-radius: 15px;
+}
+.cards > img{
+    width: 450px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.para{
+    color: rgb(15, 15, 15);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.cards{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
