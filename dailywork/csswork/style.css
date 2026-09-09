@@ -19,12 +19,11 @@ a{
 .parent{
     width: 500px;
     height: 400px;
-    background-color: rgb(169, 174, 177);
+    background-color: rgb(245, 247, 248);
     position: relative;
     align-items: center;
     left: 50px;
     top: 40px;
-    border-radius: 15px;
 }
 .cards > img{
     width: 450px;
