@@ -1,0 +1,47 @@
+.btn{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn1{
+    padding: 30px;
+    color: aliceblue;
+    border: none;
+    background-color: rgb(75, 168, 75);
+    border-radius: 20px;
+}
+
+.btn2{
+    color: aliceblue;
+    padding: 30px;
+    border: none;
+    background-color: rgb(177, 221, 57);
+    border-radius: 20px;
+}
+
+.btn3{
+    color: aliceblue;
+padding: 30px;
+    border: none;
+    background-color: rgb(250, 94, 94);
+    border-radius: 20px;
+}
+
+.btn1:hover{
+    background-color: rgb(35, 110, 28);
+    color: rgb(5, 5, 5);
+    border: 2px solid black;
+}
+
+.btn2:hover{
+    background-color: rgb(215, 250, 17);
+    color: rgb(5, 5, 5);
+    border: 2px solid black;
+}
+
+.btn3:hover{
+    background-color: rgb(179, 20, 20);
+    color: rgb(5, 5, 5);
+    border: 2px solid black;
+}

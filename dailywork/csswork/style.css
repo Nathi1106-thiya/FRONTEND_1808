@@ -16,30 +16,69 @@ a{
     text-decoration: none;
 }
 
-.parent{
-    width: 500px;
-    height: 400px;
-    background-color: rgb(245, 247, 248);
+/* .parent{
+    background-color: rgb(61, 71, 77);
     position: relative;
     align-items: center;
-    left: 50px;
+    left: 10px;
     top: 40px;
 }
 .cards > img{
-    width: 450px;
+    width: 400px;
     height: 300px;
     padding: 10px;
     border-radius: 20px;
 }
 
+.cards{
+    position: absolute;
+    display: flex;
+    flex-direction: row; 
+    top: 20px;
+    left: 20px;
+} */
+
+.parent{
+    background-color: rgb(131, 139, 139);
+    padding: 20px;
+    height: 250vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:space-around;
+    align-items: center;
+
+
+}
+.cards{
+    width: 400px;
+    height: 450px;
+    background-color: rgb(224, 216, 243);
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    
+
+}
+.cards > img{
+    width: 300px;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    padding: 50x;
+   
+
+}
+
+
 .para{
     color: rgb(15, 15, 15);
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
-}
-
-.cards{
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    padding: 20px;
 }
