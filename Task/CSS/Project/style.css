@@ -212,7 +212,7 @@ a{
 .card {
     display: inline-block;
     width: 30%;
-    margin: 0 15px;
+    margin:15px;
     background-color: rgb(245, 243, 243);
     border-radius: 20px;
     overflow: hidden;
@@ -233,8 +233,6 @@ a{
 
 .content {
     padding: 30px;
-    /* min-height: 110px; */
-    position: relative;
 }
 
 .content h3 {
@@ -260,21 +258,26 @@ a{
     width: 500px;
 }
 
-.para {
-    margin-left: 40px;
-    text-align: left;
-    letter-spacing: 1px;
+.para{
+    padding: 10px;
 }
 
-.para button{
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    border-color: #e53232;
+.btns {
+    font-weight:bold;
+    font-size: 15px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    color: #e53232;
+    border: 2px solid #e53232;
+    border-radius: 12px;
+    
 }
-/* .para button:hover{
-    border-color: #b92323;
-} */
+.btns:hover{
+    color:#660d0d ;
+    border:2px solid #660d0d;
+    transition: all 2s;
+}
 
 .final{
     padding-left: 30px;
