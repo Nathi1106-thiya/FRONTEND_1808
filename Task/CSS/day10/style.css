@@ -1,0 +1,26 @@
+.parent{
+    background-color: aquamarine;
+    padding: 20px;
+    border: 2px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+
+.child{
+    border: 2px solid rgb(22, 151, 151);
+    margin: 10px;
+}
+@media (max-width: 760px){
+    .parent{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 400px){
+    .parent{
+        grid-template-columns: 1fr;
+    }
+}
