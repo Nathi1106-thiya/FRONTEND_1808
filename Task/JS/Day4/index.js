@@ -55,7 +55,7 @@ else if(mark>=60){
     console.log("Grade B");
 }
 else{
-    console.log("Grade C")
+    console.log("Grade C");
 }
 
 // TASK-4
