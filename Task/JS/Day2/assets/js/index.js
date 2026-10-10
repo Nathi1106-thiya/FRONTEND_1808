@@ -207,4 +207,4 @@ console.log(formData);
 // const productName = "Laptop";
 // const productName = "Mobile";  // Redeclaration never
 
-// productName = "Mobile";  // Re-assignment never
+// productName = "Mobile";  // Re-assignment never1
