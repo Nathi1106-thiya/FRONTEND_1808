@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// TASK-1
+
+let numbers = [10, 20, 30, 40, 50];
+
+let result = numbers.map(num => num * 2);
+ console.log(result);
+ console.log(numbers);
+
+//  TASK-2
+
+let number = [10, 15, 20, 25, 30, 35, 40];
+let res=number.filter((a)=>{
+return a%2==0 ;
+})
+console.log(res);
+
+// TASK-3
+
+let value = [10, 25, 35, 50, 60];
+let finding=value.find((b)=>{
+    return b>30
+})
+console.log(finding);
+
+// TASK-4
+
+let students = [
+{ id: 1, name: "Arun", mark: 75 },
+{ id: 2, name: "Priya", mark: 90 },
+{ id: 3, name: "Kumar", mark: 65 }];
+
+let find=students.find((a)=>{
+    return a.id ==2
+})
+console.log(find);
+
+// TASK-5
+
+let employees = [
+{ name: "Arun", salary: 25000 },
+{ name: "Priya", salary: 45000 },
+{ name: "Kumar", salary: 30000 },
+{ name: "Ravi", salary: 50000 }];
+let salary=employees.filter((b)=>{
+    return b.salary>=30000
+    
+})
+
+console.log(salary);
+
+// TASK-6
+
+let employee=["Arun", "Priya", "Kumar", "Ravi"]
+let emp=employee.map(emp =>emp)
+console.log(emp);
+
+// TASK-7
+
+let prices = [100, 200, 300, 400];
+let total=prices.reduce((sum,prices)=>{
+
+    return sum+prices
+},0)
+console.log(total);
+
+// TASK-8
+
+let marks = [75, 80, 35, 90, 65];
+let final=marks.some((mark)=>{
+    return mark<40
+})
+console.log(final);
+let final1=marks.every((mark)=>{
+    return mark >=35
+})
+console.log(final1);
+
+// TASK-9
+
+let skills = [
+"HTML",
+"CSS",
+"JavaScript",
+"React"
+];
+for(let num of skills){
+    console.log(num);
+}
+
+
+// TASK-10
+
+let student = {
+
+name: "Arun",
+
+age: 21,
+
+course: "JavaScript",
+
+city: "Chennai"
+
+};
+
+for(let key in student){
+    console.log(key,":",student[key])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
