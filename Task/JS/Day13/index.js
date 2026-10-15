@@ -1,42 +1,95 @@
 //  TASK-1
  
-//  let title=document.getElementById("title")
-//  title.style.backgroundColor="black"
-//  title.style.color="white"
-//  title.style.fontSize="30px"
-//  const btnNo=document.getElementById("btn")
-//  btnNo.style.padding="10px";
-//  btnNo.style.borderRadius="10px";
-//  btnNo.addEventListener("click",()=>{
-//     title.style.backgroundColor="red"
-//     title.style.color="black"
-//  })
+ let title=document.getElementById("title")
+ const btnNo=document.getElementById("btn")
+ btnNo.addEventListener("click",()=>{
+    title.style.fontSize="30px"
+    title.style.color="red"
+ })
 
 //  TASK-2
 
+const btnData=document.getElementById("btn1")
+const btn=document.getElementById("btn2")
+btnData.addEventListener("click",()=>{
+    btnData.style.backgroundColor="blue"
+    btnData.style.color="white"
+})
 
-let title = document.getElementById("title");
+btn.addEventListener("click",()=>{
+    btn.style.backgroundColor="yellow";
+})
 
-let btn = document.getElementById("toggleBtn");
+// TASK-3
 
-let isVisible = true;
+const paragraph=document.getElementById("para")
+const btnNow=document.getElementById("btn3")
+const btnNum=document.getElementById("btn4")
 
-btn.addEventListener("click", () => {
+btnNow.addEventListener("click",() =>{
+    paragraph.style.display = "none";
+})
 
-if (isVisible) {
+btnNum.addEventListener("click",() =>{
+    paragraph.style.display = "block";
+})
 
-title.style.display = "none";
+// TASK-4
 
-isVisible = false;
+// const headElement=document.getElementById("head")
+// const btnDates=document.getElementById("bts")
+// let isVisible = true;
+// btnDates.addEventListener("click", () => {
 
-} else {
+// if (isVisible) {
+// headElement.style.display = "none";
+// isVisible = false;
 
-title.style.display = "block";
+// }
 
-isVisible = true;
+//  else {
+// headElement.style.display = "block";
 
-}
+// isVisible = true;
 
-});
+// }
+
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let title = document.getElementById("title");
+
+// let btn = document.getElementById("toggleBtn");
+
+// let isVisible = true;
+
+// btn.addEventListener("click", () => {
+
+// if (isVisible) {
+
+// title.style.display = "none";
+
+// isVisible = false;
+
+// } else {
+
+// title.style.display = "block";
+
+// isVisible = true;
+
+// }
+
+// });
 
 
