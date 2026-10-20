@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   <form id="empform">
+        
+        <input type="text" id="EmployeeName">
+        <input type="number" id="EmployeeAge">
+        <input type="text" id="Department">
+        <input type="text" id="Salary">
+        <button type="submit">Submit</button>
+    </form>
+<div>
+    <table border="1" cellpadding="10" >
+        <thead>
+      <th>
+        S.NO
+      </th>
+      <th>NAME</th>
+      <th>Age</th>
+      <th>Depart</th>
+      <th>Salary</th>
+    </thead>
+    <tbody id="dataValue"> 
+    </tbody>
+    </table>
+</div>
+
+<script >
+    let a = []
+   const getForm = document.getElementById("empform")
+   getForm.addEventListener('submit',(event)=>{
+
+    event.preventDefault()
+          
+     const name = document.getElementById("EmployeeName")
+     const age = document.getElementById("EmployeeAge")
+     const depart = document.getElementById("Department")
+     const salary = document.getElementById("Salary")
+
+     const username = name.value
+     const userage = age.value
+     const userdepart = depart.value
+     const usersalary = salary.value
+
+     const obj = {username,userage,userdepart,usersalary}
+
+     a.push(obj)
+
+     const datas = a
+
+     const dataValue = document.getElementById("dataValue")
+
+     let datasnew = ""
+
+
+     datas.forEach((e,i)=>{
+
+        datasnew += `<tr>
+            
+            <td>${i+1}</td>
+            <td>${e.username}</td>
+            <td>${e.userage}</td>
+            <td>${e.userdepart}</td>
+            <td>${e.usersalary}</td>
+
+            </tr>`
+     })
+    
+     dataValue.innerHTML = datasnew
+
+     name.value = ""
+     age.value = ""
+     depart.value = ""
+     salary.value = ""
+
+   
+   })
+
+</script>
+
+
+    <script src="index.js"></script>
+
+</body>
+ 
+</html>
