@@ -10,8 +10,9 @@
 
      <form id="empform" style="padding: 20px; display: flex; gap: 30px;">
         <input type="text" id="txt" >
-        <input type="email" id="mail">
-        <input type="number" id="num">
+        <input type="number" id="age">
+        <input type="text" id="department">
+        <input type="number" id="sal">
         <button type="submit">Submit</button>
     </form>
 
@@ -24,31 +25,17 @@
         S.NO
       </th>
       <th>NAME</th>
-      <th>EMAIL</th>
-      <th>NUMBER</th>
+      <th>AGE</th>
+      <th>DEPARTMENT</th>
+      <th>SALARY</th>
     </thead>
 
     <tbody id="dataValue"> 
     </tbody>
     </table>
 
-
-
-      <table border="1" cellpadding="10" >
-          <thead>
-        <th>
-          S.NO
-        </th>
-        <th>NAME</th>
-        <th>EMAIL</th>
-        <th>AGE</th>
-      </thead>
-
-      <tbody id="dataValue1"> 
-      </tbody>
-      </table>
-    <button type="submit" id="agebtn" style="padding: 5px; height: 25px ;">Click</button>
 </div>
+
 </body>
 </html>
 
@@ -69,13 +56,14 @@ const getData = () => {
             <tr>
                 <td>${i + 1}</td>
                 <td>${e.name}</td>
-                <td>${e.email}</td>
-                <td>${e.number}</td>
+                <td>${e.age}</td>
+                <td>${e.dep}</td>
+                <td>${e.sala}</td>
             </tr>
         `;
     });
 
-    table.innerHTML = data;
+    table.innerHTML = data; 
 };
   getData();
 
@@ -89,33 +77,40 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     let empName = document.getElementById("txt");
-    let empEmail = document.getElementById("mail");
-    let empNumber = document.getElementById("num");
+    let empAge = document.getElementById("age");
+    let empDep = document.getElementById("department");
+    let empSal = document.getElementById("sal");
 
 
     const name = empName.value.trim();
-    const email = empEmail.value.trim();
-    const number = empNumber.value.trim();
+    const age = empAge.value.trim()
+    const dep = empDep.value.trim();
+    const sala=empSal.value
 
     // Validation
-    if (name === "" || email === "" || number === "") {
+    if (name === "" || age === "" || dep === "" || sala==="") {
         alert("Please fill in all fields!");
         return;
+    }
+    else if(Number(age)===0 || sala===0){
+        alert("Number must be positive")
+        return
     }
 
     // Get saved employees
     let employee = JSON.parse(localStorage.getItem("employee")) || [];
 
     // Create an employee object
-    let obj = { name, email, number };
+    let obj = {id: Date.now(),name,age,dep,sala};
 
     // Add the new employee
-
     employee.push(obj);
 
     // Save to localStorage
-
     localStorage.setItem("employee", JSON.stringify(employee));
+
+    console.log(employee);
+    
 
     // Clear input fields
 
@@ -130,4 +125,17 @@ form.addEventListener("submit", (event) => {
     
     getData();
 });
+
+
+// function deleteEmployee(id) {
+//     let employee = JSON.parse(localStorage.getItem("employee")) || [];
+
+//     employee = employee.filter((e) => e.id !== id);
+
+//     localStorage.setItem("employee", JSON.stringify(employee));
+
+//     getData();
+// }
+
+
 </script>
