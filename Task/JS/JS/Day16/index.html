@@ -28,6 +28,7 @@
       <th>AGE</th>
       <th>DEPARTMENT</th>
       <th>SALARY</th>
+      <th>ACTION</th>
     </thead>
 
     <tbody id="dataValue"> 
@@ -59,6 +60,9 @@ const getData = () => {
                 <td>${e.age}</td>
                 <td>${e.dep}</td>
                 <td>${e.sala}</td>
+                <td>
+    <button onclick="deleteEmployee(${e.id})">Delete</button>
+</td>
             </tr>
         `;
     });
@@ -83,16 +87,16 @@ form.addEventListener("submit", (event) => {
 
 
     const name = empName.value.trim();
-    const age = empAge.value.trim()
+    const age = empAge.value.trim();
     const dep = empDep.value.trim();
-    const sala=empSal.value
+    const sala=empSal.value;
 
     // Validation
     if (name === "" || age === "" || dep === "" || sala==="") {
         alert("Please fill in all fields!");
         return;
     }
-    else if(Number(age)===0 || sala===0){
+    else if(Number(age)<=0 || sala<=0){
         alert("Number must be positive")
         return
     }
@@ -127,15 +131,15 @@ form.addEventListener("submit", (event) => {
 });
 
 
-// function deleteEmployee(id) {
-//     let employee = JSON.parse(localStorage.getItem("employee")) || [];
+function deleteEmployee(id) {
+    let employee = JSON.parse(localStorage.getItem("employee")) || [];
 
-//     employee = employee.filter((e) => e.id !== id);
+    employee = employee.filter((event) => event.id !== id);
 
-//     localStorage.setItem("employee", JSON.stringify(employee));
+    localStorage.setItem("employee", JSON.stringify(employee));
 
-//     getData();
-// }
+    getData();
+}
 
 
 </script>
