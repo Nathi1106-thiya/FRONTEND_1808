@@ -1,0 +1,63 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #172554;
+  color: white;
+}
+
+nav div {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.hero {
+  background-color: #dbeafe;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 5px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #172554;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer p {
+  margin: 8px;
+}

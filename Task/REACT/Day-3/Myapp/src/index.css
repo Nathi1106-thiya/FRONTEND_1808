@@ -1,0 +1,73 @@
+.head{
+  background-color: rgb(159, 165, 165);
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.head img{
+  width: 100px;
+  border-radius: 20px;
+}
+
+.move{
+  display: flex;
+  gap: 15px;
+}
+
+.move a{
+
+text-decoration: none;
+
+}
+
+.header{
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.all{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+
+}
+
+.all img{
+  width: 100px;
+  border-radius: 50px;
+
+}
+
+.food{
+  display: flex;
+  gap: 20px;
+}
+
+.bar{
+  background-color: rgb(106, 119, 115);
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 10px;
+
+}
+
+.main{
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+  padding: 20px;
+}

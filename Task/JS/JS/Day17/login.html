@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form id="employee">
+        <input type="email" id="email">
+        <input type="number" id="password">
+        <input type="submit">
+    </form>
+
+   
+    <script >
+        
+const form=document.getElementById("employee")
+form.addEventListener("submit",(event)=>{
+    event.preventDefault()
+    const empemail=document.getElementById("email")
+    const empnumber=document.getElementById("password")
+// input value
+
+    const email=empemail.value.trim()
+    const enumb=empnumber.value.trim()
+
+
+
+    let ray = JSON.parse(localStorage.getItem("mynewdata")) 
+   
+ let filterarr = ray.find((e)=>
+e.email === email && e.enumb === enumb
+ )
+
+ localStorage.setItem("isActiveuser",JSON.stringify(filterarr))
+
+ if (!filterarr) {
+    alert("Invalid")
+    return
+ }
+    
+
+
+window.location.href="index.html"
+})
+    </script>
+</body>
+</html>

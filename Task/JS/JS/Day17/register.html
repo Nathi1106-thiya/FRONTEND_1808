@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form id="employee">
+        <input type="text" id="name">
+        <input type="number" id="age">
+        <input type="email" id="email">
+        <input type="number" id="password">
+        <input type="submit">
+    </form>
+
+   
+    <script >
+        
+const form=document.getElementById("employee")
+form.addEventListener("submit",(event)=>{
+    event.preventDefault()
+    const empname=document.getElementById("name")
+    const empage=document.getElementById("age")
+    const empemail=document.getElementById("email")
+    const empnumber=document.getElementById("password")
+// input value
+
+    const ename=empname.value.trim()
+    const eage=empage.value.trim()
+    const email=empemail.value.trim()
+    const enumb=empnumber.value.trim()
+
+    // validation
+
+    if (ename===""||eage===""||email===""||enumb===""){
+        alert("Please Enter All Details")
+        return
+    }
+
+
+    let obj={id: Date.now(),ename,eage,email,enumb}
+    let ray = JSON.parse(localStorage.getItem("mynewdata")) || []
+    ray.push(obj)
+    localStorage.setItem("mynewdata",JSON.stringify(ray))
+    alert("Successfully done")
+    form.reset()
+
+
+window.location.href="login.html"
+})
+    </script>
+</body>
+</html>

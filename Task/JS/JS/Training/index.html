@@ -52,14 +52,11 @@
 
      a.push(obj)
 
-     const datas = a
-
      const dataValue = document.getElementById("dataValue")
-
      let datasnew = ""
 
 
-     datas.forEach((e,i)=>{
+     a.forEach((e,i)=>{
 
         datasnew += `<tr>
             
@@ -70,7 +67,7 @@
             <td>${e.usersalary}</td>
 
             </tr>`
-     })
+    })
     
      dataValue.innerHTML = datasnew
 
@@ -79,13 +76,9 @@
      depart.value = ""
      salary.value = ""
 
-   
    })
 
 </script>
-
-
-    <script src="index.js"></script>
 
 </body>
  
