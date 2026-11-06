@@ -30,6 +30,11 @@ const Todo=()=>{
 
         e.preventDefault()
 
+        if(!uname||!uage||!umob){
+          alert("please fill this form")
+          return
+        }
+
         // object making ethu vara eruka data store panna
         const obj={id:Date.now(),uname,uage,umob}
 
@@ -51,10 +56,10 @@ const Todo=()=>{
 
       useEffect(()=>{
 
-        const show=localStorage.getItem("data")
-        const final=JSON.parse(show)
-        setUdata(final)
-      },[handleClick])
+        const show=JSON.parse(localStorage.getItem("data")) || []
+        
+        setUdata(show)
+      },[])
 
 
 
