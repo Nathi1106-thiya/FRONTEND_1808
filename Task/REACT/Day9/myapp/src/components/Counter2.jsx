@@ -3,7 +3,7 @@ import{useState} from "react"
 const Counter2=()=>{
 
     const [num,setNum]=useState(0)
-   
+  
     const handleIncre=()=>{
 
       setNum(num+1)
