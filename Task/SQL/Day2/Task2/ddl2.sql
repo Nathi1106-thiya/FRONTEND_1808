@@ -11,5 +11,4 @@ joining_date DATE NOT NULL ,
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 craeteby varchar(20) default "nathiya",
 status boolean default true
-
 );
