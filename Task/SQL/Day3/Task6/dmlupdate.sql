@@ -1,5 +1,7 @@
 use dml;
 
+SET SQL_SAFE_UPDATES = 1;
+
 create table updatedata(
 
     staff_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -26,15 +28,14 @@ select*from updatedata;
 
 update updatedata set department="IT" where staff_id=5;
 
-UPDATE updatedata
-SET salary = salary + 5000
-WHERE department = 'HR';
+UPDATE updatedata SET salary = salary + 5000 WHERE department = 'HR';
 
 update updatedata SET city = "HR" WHERE salary > 30000;
 
 drop table updatedata;
 
-SET SQL_SAFE_UPDATES = 0;
+
+
 
 
 

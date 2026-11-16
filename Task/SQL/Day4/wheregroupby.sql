@@ -32,7 +32,8 @@ select*from employees where Emp_Age between 18 and 25 and City in ("Chennai","Ma
 -- task3
 select Emp_Department,count(*) from employees group by Emp_Department;
 
-select category,sum(stack),avg(price) from products group by category;
+select Emp_Department,count(*) as total_emp,avg(Emp_Salary) as avg from employees where Emp_Salary>25000 group by Emp_Department having avg(Emp_Salary)>40000;
+select Emp_Department,count(Emp_Department) as total_emp,min(Emp_Salary) as tot_salary from employees group by Emp_Department having min(Emp_Salary)>=30000 ;
 
 
 

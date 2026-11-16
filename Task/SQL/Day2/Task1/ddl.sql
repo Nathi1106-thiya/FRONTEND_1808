@@ -18,7 +18,6 @@ updateby varchar(20),
 updateat timestamp default current_timestamp,
 status boolean default true
 
-
 );
 
 

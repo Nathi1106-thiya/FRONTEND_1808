@@ -1,7 +1,6 @@
 use college_db;
 
 create table employee(
-
 emp_id int primary key auto_increment,
 name varchar(20),
 salary int not null,
@@ -13,8 +12,8 @@ createat timestamp default current_timestamp,
 updateby varchar(100),
 upateat timestamp default current_timestamp,
 status boolean default true
-
 );
 
 alter table employee rename column name to employee_name;
-
+alter table employee modify salary DECIMAL(12,2);
+alter table employee add email varchar(100) unique;

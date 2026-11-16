@@ -1,5 +1,7 @@
 use dml;
 
+SET SQL_SAFE_UPDATES = 0;
+
 create table orders (
 
  order_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -37,4 +39,3 @@ delete from orders where quantity<2 or price<500;
 delete from orders where quantity<5;
 
 
-SET SQL_SAFE_UPDATES = 0;
